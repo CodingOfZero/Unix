@@ -1,5 +1,5 @@
 #include<signal.h>
-#include"myerror.h"
+#include"myerrno.h"
 static void sig_usr(int);
 int main(){
     if(signal(SIGUSR1,sig_usr)==SIG_ERR)

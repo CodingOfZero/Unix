@@ -1,3 +1,5 @@
+#ifndef MYERRNO
+#define NYERRNO
 #include<errno.h>
 #include<stdarg.h>
 #include<stdio.h>
@@ -103,4 +105,4 @@ static void err_doit(int errnoflag,int error,const char*fmt,va_list ap){
     fputs(buf,stderr);
     fflush(NULL);
 }
-
+#endif
